@@ -1,0 +1,303 @@
+/*
+PALETA DE COLORES
+FONDO: #2A2D35
+COLOR TEXTO 1: #95969A
+COLOR TEXTO 2: #666F7E
+FONDO COLOR: #31343E
+FONDO COLOR2: #4C505E
+DORADO: #C7A780
+DORADO LOGO: #BA9041
+CREMA: #E6DED5
+FONDO MAS OSCURO: #23262E
+*/
+
+/* ==================================
+            GENERALES
+==================================*/
+*:not(i){
+    font-family: 'Lato', sans-serif;
+}
+
+body{background-color: #2A2D35;color:#95969A;}
+
+.card{
+    background-color: #31343E;
+    padding:20px;
+}
+
+h1,h2,h3,h4,h5,h6{color:white}
+
+#mainCon{padding-bottom:100px;}
+
+.textoGris{color:#95969A}
+
+a{text-decoration:none}
+a:hover{text-decoration:none}
+
+/* ==================================
+            ADMIN - HEADER
+==================================*/
+.adminLogo{
+    color: #BA9041 !important;
+    background: url(../img/logo2-01.png) no-repeat left center;
+    background-size: 40px 40px;
+    padding-left:55px;
+}
+
+/* ==================================
+                ADMIN
+==================================*/
+.tabla-sec{
+    padding:20px;
+    width:100%;
+}
+
+.tabla-sec div{
+    border:1px solid white;
+    text-align:center;
+    padding:20px;
+    transition:.5s;
+}
+
+.tabla-sec h2{
+    font-size:20px;
+}
+
+.tabla-sec i{
+    font-size:55px;
+    margin-bottom:20px;
+    color:white;
+}
+
+.tabla-sec:hover div{
+    background-color:white;
+}
+
+.tabla-sec:hover h2{
+    color:#31343E;
+}
+
+.tabla-sec:hover i{
+    color:#31343E;
+}
+
+/* ==================================
+            ADMIN - FOOTER
+==================================*/
+
+.admin-footer{
+    background-color: #23262E;
+    color: #666F7E;
+}
+
+/* ==================================
+            ADMIN - TABLA
+==================================*/
+
+.myTable{
+    color: #95969A;
+}
+
+.myTable tr td,
+.myTable tr th{
+    border-color:#4C505E !important;
+}
+
+.myTable tr th{
+  border-bottom-width: 4px;  
+    font-weight: bold;
+}
+
+.myTable a i{
+    color:#95969A !important;
+}
+
+.hoverPlus{transition:.5s; cursor:pointer}
+.hoverPlus:hover{transform:scale(1.2)}
+
+.talle{
+    border: 1px solid #95969A;
+    padding:10px;
+}
+
+.sinBtn{
+    color: #95969A !important;
+}
+
+.img-mini{
+    width:100px;
+    height:100px;
+/*    display:block;*/
+/*    border-radius:100%;*/
+}
+
+/* ==================================
+            COLORES
+==================================*/
+
+.circuloBlanco{color: white;}
+.circuloAzul{color: blue;}
+.circuloAmarillo{color: yellow;}
+.circuloNaranja{color: orange;}
+.circuloRojo{color: red;}
+.circuloGris{color: gray;}
+.circuloVioleta{color: violet;}
+.circuloRosa{color: pink;}
+.circuloVerde{color: green;}
+.circuloNegro{color: black;}
+.circuloCeleste{color: skyblue;}
+
+
+/* ==================================
+            FORMULARIOS
+==================================*/
+
+.myInput{
+    background-color:#31343E !important;
+    border-color:#666F7E;
+    border-radius:0;
+    color:white !important;
+}
+
+.myInput:focus{
+    border-color: #C7A780;
+}
+
+.myBtnGray{
+    background-color:#3E3E3E !important;
+    border-color: #666F7E !important;
+}
+
+
+::placeholder { 
+  color:#6C757D !important;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { 
+  color:#6C757D !important;
+}
+
+::-ms-input-placeholder { 
+  color:#6C757D !important;
+}
+
+
+.checkColor input:checked~label{
+    border:1px solid white;
+    color:white !important;
+}
+
+.checkColor label{
+    padding:5px;
+}
+
+.checkTalles input,
+.checkColor input{
+    display:none;
+}
+
+.talleTitulo{
+    color:#95969A;
+    font-size:1rem;
+    margin-bottom:.5rem;
+}
+
+.checkTalles input:checked~label{
+    background-color:white;
+    color:#31343E;
+}
+
+.checkTalles label,.checkColor label{
+    cursor:pointer !important;
+}
+
+/* ==================================
+            PAGINACION
+==================================*/
+
+.myPagination ul{
+    float:right;
+}
+
+.myPagination .page-link{
+    background-color:#31343E !important;
+    color:#95969A !important;
+    border-color: #4C505E !important; 
+}
+
+.myPagination .page-item.active .page-link{
+    background-color:#95969A !important;
+    color:#31343E !important;
+}
+
+/* ==================================
+            BUSQUEDA
+==================================*/
+
+.img-search{
+/*    float:left !important;*/
+    margin-right:20px;
+}
+
+.a-search{
+    color: #95969A;
+}
+
+.a-search:hover{
+    color: white;
+}
+
+
+/* ==================================
+            AVISOS
+==================================*/
+.msj{
+    color:white;
+    background-color:#36B9CC;
+    margin-bottom:20px;
+    padding:10px;
+}
+
+.msj p{
+    padding:15px;
+    padding-left: 60px;
+    font-weight: bold;
+    font-size:13pt;
+    background: url(../img/icon/icon-alert.png) no-repeat left center;
+    background-size: 50px 50px;
+    margin:0;
+}
+
+.msj-ok{
+    background-color: forestgreen;
+}
+
+.msj-ok p{
+    background-image:url(../img/icon/icon-ok.png);
+}
+
+.msj-error{
+    background-color: indianred;
+}
+
+.msj-error p{
+    background-image:url(../img/icon/icon-error.png);
+}
+
+.msj-alert{
+    background-color: #F8F4C3;
+}
+
+/*
+PALETA DE COLORES
+FONDO: #2A2D35
+COLOR TEXTO 1: #95969A
+COLOR TEXTO 2: #666F7E
+FONDO COLOR: #31343E
+FONDO COLOR2: #4C505E
+DORADO: #C7A780
+DORADO LOGO: #BA9041
+CREMA: #E6DED5
+FONDO MAS OSCURO: #23262E
+*/

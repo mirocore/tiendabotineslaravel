@@ -1,0 +1,352 @@
+/* ==================================
+            GENERALES
+==================================*/
+
+*:not(i){
+    font-family: 'Lato', sans-serif;
+}
+
+/*a{text-decoration:none}*/
+/*a:hover{text-decoration:none}*/
+
+/* ==================================
+            HEADER
+==================================*/
+
+.frontLogo{
+    color: #BA9041 !important;
+    background: url(../img/logo1-01.png) no-repeat left center;
+    background-size: 40px 40px;
+    padding-left:55px;
+    font-weight:bold;
+    font-style:italic;
+}
+
+#top{
+    padding:1.5rem;
+    background-color:white !important;
+    transition:.5s;
+    box-shadow:0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #dadce0;    
+    
+}
+
+#top form{
+    width:40%;
+}
+
+#top form input{
+    border-radius:0;
+}
+
+#top form button{
+    color: #BA9041 !important;
+    background-color: black;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+#links-nav li a{
+    color:#95969A;
+}
+
+/* ==================================
+            NAVEGADOR
+==================================*/
+
+.reducir{
+    padding:.8rem !important;
+    box-shadow:0 2px 6px 0 rgba(0,0,0,.12),inset 0 -1px 0 0 #dadce0;    
+}
+
+#navegador{
+    background-color: #2A2D35;
+    padding:20px;
+}
+
+#navegador .list-inline-item a{
+    color: #BA9041;
+    margin-right:15px;
+    transition:.5s;
+    padding:10px;
+    border-radius:10px;
+}
+
+#navegador .list-inline-item a:hover{
+    color:#2A2D35;
+    background-color:#BA9041; 
+}
+
+#navMobile{
+    position:fixed;
+    top:88.8px;
+    width:70%;
+    right:-1000px;
+    height:100vh;
+    background-color:#2A2D35;
+    transition:.5s;
+}
+
+.mostrar{
+    right:0 !important;
+}
+
+
+
+#navMobile li{
+/*    border:1px solid red;*/
+    padding:20px;
+}
+
+#navMobile li:hover{
+    border:1px solid #BA9041;
+    cursor:pointer;
+}
+
+#navMobile li a{
+    color:#BA9041;
+    width:100%;
+}
+
+#navegador{padding-top:100px;}
+
+#buscadorMobile{
+    margin-top:150px;
+}
+
+@media(max-width:991px){
+.mt-max{
+    margin-top:150px;
+}
+}
+
+#buscadorMobile input,
+#buscadorMobile button{
+    border-radius:0;
+}
+
+/* ==================================
+            HOME
+==================================*/
+.productoHome{
+    color: black;
+}
+
+.productoHome .precio{
+    color:#777;
+}
+
+.productoHome figure{
+    position:relative;
+}
+
+.verMas{
+    position:absolute;
+    background-color:rgba(0,0,0,0.7);
+    color:white;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    font-size:40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    transition:.5s;
+}
+
+.verMas:hover{
+    opacity:100;
+}
+
+/* ==================================
+            TIENDA
+==================================*/
+
+.productoTienda{
+    color: black;
+}
+
+.productoTienda .precio{
+    color:#777;
+}
+
+.productoTienda figure{
+    position:relative;
+}
+
+.prodTienda{
+/*    border:1px solid #777;*/
+    padding-top:20px;
+}
+
+.tienda-filtro{
+    border:1px solid #95969A;
+    padding:20px 10px;
+}
+
+.tienda-filtro a{
+    color:#95969A;
+}
+
+.sinRdo{
+    width:100%;
+}
+
+.tienda-filtro li.activo a{
+    color: #BA9041 !important;
+    padding-left:10px;
+}
+
+/* ==================================
+            TIENDA - VER
+==================================*/
+
+.tiendaVer .precio{
+    font-weight:bold;
+    font-size:25px;
+    color:#BA9041;
+    margin-bottom:10px;
+}
+
+.tiendaVer .descripcion{
+    color:#95969A;
+    margin-bottom:20px;
+    padding-bottom:20px;
+    border-bottom:1px solid #BA9041;
+}
+
+.tiendaVer .marca{
+    color:#95969A;
+}
+
+.tiendaVer .marca span{
+    color:darkslategrey;
+    font-weight:bold;
+}
+
+.tiendaVer .color{
+    margin-bottom:20px;
+    padding-bottom:20px;
+    border-bottom:1px solid #BA9041;    
+}
+
+.verColor{
+    color:#95969A;
+}
+
+.checkTalles input,{
+/*    display:none;*/
+}
+
+
+
+
+
+.checkTalles label,.checkColor label{
+    cursor:pointer !important;
+    color:#95969A;
+}
+
+.inputCantidad{
+    border:none;
+    background-color:#EFEFEF;
+    width: 70px;
+    height:70px;
+    text-align:center;
+    font-weight:bold;
+}
+
+.aumentarRestar{
+    margin:0;
+}
+
+.aumentarRestar li i{cursor:pointer; font-size:15px; background-color:#EFEFEF;color:black;width:30px;height:30px; padding:10px;}
+.aumentarRestar li {}
+
+.cantidad{
+    align-items: center;
+}
+
+#addCart{
+    background-color: #BA9041;
+    padding:20px 30px;
+    margin-left:20px;
+    color:white;
+    text-transform:uppercase;
+    border-radius:0;
+    transition:.5s;
+}
+
+#addCart:hover{
+    background-color:#C7A780;
+}
+
+
+/* ==================================
+            PIE DE PAGINA
+==================================*/
+
+#piePagina{
+    background-color:#2A2D35;
+    color:#95969A;
+    padding:60px 20px;
+    margin-top:100px;
+}
+
+#piePagina p,
+#piePagina li a{
+    font-size:12px;
+    color:#95969A;
+}
+
+/* ==================================
+            PAGINACION
+==================================*/
+
+.myPagination ul{
+    float:right;
+}
+
+.myPagination .page-link{
+    background-color:transparent !important;
+    color:#95969A !important;
+    border-color: #4C505E !important; 
+}
+
+.myPagination .page-item.active .page-link{
+    background-color:#31343E !important;
+    color:#95969A !important;
+}
+
+
+/* ==================================
+            BUSQUEDA
+==================================*/
+.img-mini{
+    width:150px;
+    height:150px;
+}
+
+@media(max-width:400px){
+    .img-mini{
+        width:80px;
+        height:80px;
+    }
+}
+
+/* ==================================
+            COLORES
+==================================*/
+
+.circuloBlanco{color: whitesmoke;}
+.circuloAzul{color: blue;}
+.circuloAmarillo{color: yellow;}
+.circuloNaranja{color: orange;}
+.circuloRojo{color: red;}
+.circuloGris{color: gray;}
+.circuloVioleta{color: violet;}
+.circuloRosa{color: pink;}
+.circuloVerde{color: green;}
+.circuloNegro{color: black;}
+.circuloCeleste{color: skyblue;}
